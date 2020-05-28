@@ -42,9 +42,9 @@
   <div class="gallery__filler"></div>
   
   <label class="gallery__item" for="0">
- 	<img src="https://source.unsplash.com/random/400x400?bear,cat&amp;v=18" alt="Something random"/>
+ 	<img src="https://source.unsplash.com/random/400x400?bear,cat&amp;v=1" alt="Something random"/>
   </label>
-  
+
   <label class="gallery__item" for="1"><img src="https://source.unsplash.com/random/400x400?bear,cat&amp;v=3" alt="Something random"/></label>
   <label class="gallery__item" for="2"><img src="https://source.unsplash.com/random/400x400?bear,cat&amp;v=4" alt="Something random"/></label>
   <label class="gallery__item" for="3"><img src="https://source.unsplash.com/random/400x400?bear,cat&amp;v=20" alt="Something random"/></label>
@@ -58,5 +58,117 @@
   <label class="gallery__item" for="11"><img src="https://source.unsplash.com/random/400x400?bear,cat&amp;v=12" alt="Something random"/></label>
   <label class="gallery__item" for="12"><img src="https://source.unsplash.com/random/400x400?bear,cat&amp;v=23" alt="Something random"/></label>
 </div>  
-	</body>
+
+
+   <div class="parent">
+    <div class="child">
+        <a href="/images/cat.jpg" download>
+            <img src="/images/cat.jpg" alt="W3Schools" class="imgSrc">
+         </a>
+    </div>
+    <div class="child">
+        <a href="/images/cat1.jpg" download>
+            <img src="/images/cat1.jpg" alt="W3Schools" class="imgSrc">
+         </a>
+    </div>
+    <div class="child">
+        <a href="/images/cat2.jpg" download>
+            <img src="/images/cat2.jpg" alt="W3Schools" class="imgSrc">
+         </a>
+    </div>
+    <div class="child">
+        <a href="/images/cat3.jpg" download>
+            <img src="/images/cat3.jpg" alt="W3Schools" class="imgSrc">
+         </a>
+    </div>
+    <div class="child">
+        <a href="/images/cat4.jpg" download>
+            <img src="/images/cat4.jpg" alt="W3Schools" class="imgSrc">
+         </a>
+    </div>
+    <div class="child">
+        <a href="/images/cat5.jpg" download>
+            <img src="/images/cat5.jpg" alt="W3Schools" class="imgSrc">
+         </a>
+    </div>
+    <div class="child">
+        <a href="/images/cat6.jpg" download>
+            <img src="/images/cat6.jpg" alt="W3Schools" class="imgSrc">
+         </a>
+    </div>
+    <div class="child">
+        <a href="/images/doll.jpg" download>
+            <img src="/images/doll.jpg" alt="W3Schools" class="imgSrc">
+         </a>
+    </div>
+    <div class="child">
+        <a href="/images/cat7.jpg" download>
+            <img src="/images/cat7.jpg" alt="W3Schools" class="imgSrc">
+         </a>
+    </div>
+    <div class="child">
+        <a href="/images/cat8.jpg" download>
+            <img src="/images/cat8.jpg" alt="W3Schools" class="imgSrc">
+         </a>
+    </div>
+    <div class="child">
+        <a href="/images/cat9.jpg" download>
+            <img src="/images/cat9.jpg" alt="W3Schools" class="imgSrc">
+         </a>
+    </div>
+    <div class="child">
+        <a href="/images/cat10.jpg" download>
+            <img src="/images/cat10.jpg" alt="W3Schools" class="imgSrc">
+         </a>
+    </div>
+    <div class="child">
+        <a href="/images/cat11.jpg" download>
+            <img src="/images/cat11.jpg" alt="W3Schools" class="imgSrc">
+         </a>
+    </div>
+    <div class="child">
+        <a href="/images/cat12.jpg" download>
+            <img src="/images/cat12.jpg" alt="W3Schools" class="imgSrc">
+         </a>
+    </div>
+    <div class="child">
+        <a href="/images/cat13.jpg" download>
+            <img src="/images/cat13.jpg" alt="W3Schools" class="imgSrc">
+         </a>
+    </div>
+    <div class="child">
+        <a href="/images/cat14.jpg" download>
+            <img src="/images/cat14.jpg" alt="W3Schools" class="imgSrc">
+         </a>
+    </div>
+  </div>
+  <!-- <img id="output_image" height=500px width=200px>
+  <input type="file" accept="image/*" onchange="preview_image(event)">
+  
+  <script type="text/javascript">
+    function preview_image(event) {
+      var reader = new FileReader();
+      reader.onload = function(){
+        var output = document.getElementById('output_image');
+        output.src = reader.result;
+      }
+      reader.readAsDataURL(event.target.files[0]);
+    }
+  </script> -->
+  <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+  <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+  <p>
+    <img id="output" width="50" height="50" class="imgSrc" />
+  </p>
+
+
+
+ </body>
+   
+<script>
+    var loadFile = function(event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+    </script> 
 </html>
